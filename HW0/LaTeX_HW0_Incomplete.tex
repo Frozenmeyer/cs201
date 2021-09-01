@@ -1,0 +1,243 @@
+\documentclass[12pt]{article}
+\input{preamble.tex}
+
+% CHANGE ZZZ to the number of the course you are submitting to and NN to the
+% number of the homework. \bfseries is there to make the typeface bold
+
+\title{\bfseries CS 201 Homework 01}
+\author{Leif O'nye King}
+\date{9/1/2021}
+
+%% -----------------------------------
+%% N E E D   H E L P ? ---------------
+%% -----------------------------------
+%% https://en.wikibooks.org/wiki/LaTeX
+%% -----------------------------------
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LINKS SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item Repository Link:
+% This is where you will put a link to your GitHub project
+\url{https://github.com/Frozenmeyer/cs201.git}
+
+% This is where you will put a link to your GitHub project commits
+\item Git Commits:
+\url{https://github.com/Frozenmeyer/cs201.git}
+
+% PLEASE NOTE THE AMOUNT OF TIME THIS HOMEWORK TOOK
+
+\item This homework took approximately XX hours to complete.
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DESIGN SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Design}
+
+Getting each of the individual applications was easy. I already had Github, Visual Studio and VS code were easy to get. Getting all of these applications to play together was a nightmare and I'm uncertain I've  done it correctly even now.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POST MORTEM SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Post Mortem}
+
+A lot went wrong for quite a while. Linking and learning how these different applications work is realistically still a work in progress. I think I've cobbled together enough work arounds to submit and test code
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% QUESTION ANSWER SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Answers to Questions}
+
+In this section, you will write the answers to the questions in the homework assignment.
+
+\begin{enumerate}
+    \item Software can be very versatile problem solving. Trained neural networks can be used for all sorts of pattern recognition specifically early detection of cancerous cells.\ldots
+    \item Anyone can be a software developer, but most of the time they are pragmatic and probably tired. If you're between jobs you'll likely wear a suit, otherwise a T-shirt. \ldots
+    \item Ram: 4 GB, Disk: 256 GB, Main Memory: ??\ldots
+    \item #1 Video Games, #2 Eventually Artificial Intelligence, #3 Movies and other streaming, #4 Software developement, #5 Web developement. I'm most interested in Software / Webdevelopement as a career, but I love working on games so that may be a side project of mine. Additionally AI developements will be very interesting to follow up on and have personal knowledge of, although I doubt I'll be of much use in the field.\ldots
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 1 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{
+    #include <iostream>
+    
+    int main(){
+        std::cout << "Hellow World!" << std::endl;
+    }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAMPLE OUTPUT / SCREENSHOT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sample Output/Screenshot}
+
+% We are going to color the output BLUE, and then set it back to BLACK
+% The lstlisting environment documentation may be found
+% https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+% http://tug.ctan.org/macros/latex/contrib/listings/listings.pdf
+\lstset{language=, caption=Sample Program Output, label=lst:output}
+\color{blue}
+\begin{lstlisting}
+Hello, world
+PUT YOUR OUTPUT HERE
+\end{lstlisting}
+\color{black}
+
+Or you can put a screenshot:
+
+% Or a screenshot
+\begin{center}
+\includegraphics[width=0.5\textwidth]{screenshot.png}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GIT COMMIT MESSAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Git Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & \text{fix crash where maxhistorylines was 0 in hflog} \\
+2019-11-07 & \text{Add pitch() method to TImage} \\
+\hline
+\end{tabularx}
+\end{centering}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SOURCE CODE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Source Code}
+
+% You could also \inputminted{c++}{myfile.cpp}
+% or just put it here in the minted environment
+\begin{minted}{c++}
+#include <iostream>
+#include "triangle.hpp"
+
+using std::cout;
+using std::endl;
+
+int main(int argc, char **argv)
+{
+    cout << "Hello, World\n";
+    Triangle t;
+    t.print();
+    return 0;
+}
+\end{minted}
+
+\subsection{Triangle Header}
+
+\inputminted{c++}{triangle.hpp}
+
+\subsection{Triangle Source}
+
+\inputminted{c++}{triangle.cpp}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 2 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Program 2}
+
+
+\subsection{Sample Output / Screenshot}
+% \begin{center}
+% \includegraphics[width=0.5\textwidth]{screenshot.png}
+% \end{center}
+
+
+\subsection{Git Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & fix crash where maxhistorylines was 0 in hflog \\
+2019-11-07 & Add pitch() method to TImage \\
+\hline
+\end{tabularx}
+\end{centering}
+
+
+\subsection{Source Code}
+% \inputminted{c++}{main.cpp}
+
+
+%\subsection{File.hpp}
+% \inputminted{c++}{File.hpp}
+
+
+%\subsection{File.cpp}
+% \inputminted{c++}{File.cpp}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 3 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Program 3}
+
+\subsection{Sample Output / Screenshot}
+% \begin{center}
+% \includegraphics[width=0.5\textwidth]{screenshot.png}
+% \end{center}
+
+\subsection{GitHub Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & \text{fix crash where maxhistorylines was 0 in hflog} \\
+2019-11-07 & \text{Add pitch() method to TImage} \\
+\hline
+\end{tabularx}
+\end{centering}
+
+\subsection{Source Code}
+% \inputminted{c++}{main.cpp}
+
+
+%\subsection{File.hpp}
+% \inputminted{c++}{File.hpp}
+
+
+%\subsection{File.cpp}
+% \inputminted{c++}{File.cpp}
+
+
+
+\end{document}
