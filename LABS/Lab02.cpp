@@ -12,5 +12,5 @@ int main(){
     int number;
     std::cin >> number;
     number += 1;
-    std::cout << "You typed: " << number*number << std::endl;
+    std::cout << "Your Number +1 squared: " << number*number << std::endl;
 }
