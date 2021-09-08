@@ -1,0 +1,237 @@
+\documentclass[12pt]{article}
+\input{preamble.tex}
+
+% CHANGE ZZZ to the number of the course you are submitting to and NN to the
+% number of the homework. \bfseries is there to make the typeface bold
+
+\title{\bfseries CS 201 Homework NN}
+\author{Leif O'nye King}
+\date{\today}
+
+%% -----------------------------------
+%% N E E D   H E L P ? ---------------
+%% -----------------------------------
+%% https://en.wikibooks.org/wiki/LaTeX
+%% -----------------------------------
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LINKS SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item Repository Link:
+% This is where you will put a link to your GitHub project
+\url{https://github.com/Frozenmeyer/cs201.git}
+
+% This is where you will put a link to your GitHub project commits
+\item Git Commits:
+\url{https://www.github.com/yourusername/cs202/commits}
+
+% PLEASE NOTE THE AMOUNT OF TIME THIS HOMEWORK TOOK
+
+\item This homework took approximately XX hours to complete.
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DESIGN SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Design}
+
+In this section, you will write a paragraph in about 100 words about the design you took for this program. You are encouraged to also write about the design of your other programs. You are encouraged to make one page designs for your programs as well.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% POST MORTEM SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Post Mortem}
+
+In this section, you will write a paragraph in about 100 words about what went right and what went wrong for this assignment. What lessons were learned or best practices identified?
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% QUESTION ANSWER SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Answers to Questions}
+
+In this section, you will write the answers to the questions in the homework assignment.
+
+\begin{enumerate}
+    \item Answer to question 1 \ldots
+    \item Answer to question 2 \ldots
+    \item \ldots
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 1 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Program 1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAMPLE OUTPUT / SCREENSHOT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sample Output/Screenshot}
+
+% We are going to color the output BLUE, and then set it back to BLACK
+% The lstlisting environment documentation may be found
+% https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+% http://tug.ctan.org/macros/latex/contrib/listings/listings.pdf
+\lstset{language=, caption=Sample Program Output, label=lst:output}
+\color{blue}
+\begin{lstlisting}
+Hello, world
+PUT YOUR OUTPUT HERE
+\end{lstlisting}
+\color{black}
+
+Or you can put a screenshot:
+
+% Or a screenshot
+\begin{center}
+\includegraphics[width=0.5\textwidth]{screenshot.png}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GIT COMMIT MESSAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Git Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & \text{fix crash where maxhistorylines was 0 in hflog} \\
+2019-11-07 & \text{Add pitch() method to TImage} \\
+\hline
+\end{tabularx}
+\end{centering}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SOURCE CODE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Source Code}
+
+% You could also \inputminted{c++}{myfile.cpp}
+% or just put it here in the minted environment
+\begin{minted}{c++}
+#include <iostream>
+#include "triangle.hpp"
+
+using std::cout;
+using std::endl;
+
+int main(int argc, char **argv)
+{
+    cout << "Hello, World\n";
+    Triangle t;
+    t.print();
+    return 0;
+}
+\end{minted}
+
+\subsection{Triangle Header}
+
+\inputminted{c++}{triangle.hpp}
+
+\subsection{Triangle Source}
+
+\inputminted{c++}{triangle.cpp}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 2 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Program 2}
+
+
+\subsection{Sample Output / Screenshot}
+% \begin{center}
+% \includegraphics[width=0.5\textwidth]{screenshot.png}
+% \end{center}
+
+
+\subsection{Git Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & fix crash where maxhistorylines was 0 in hflog \\
+2019-11-07 & Add pitch() method to TImage \\
+\hline
+\end{tabularx}
+\end{centering}
+
+
+\subsection{Source Code}
+% \inputminted{c++}{main.cpp}
+
+
+%\subsection{File.hpp}
+% \inputminted{c++}{File.hpp}
+
+
+%\subsection{File.cpp}
+% \inputminted{c++}{File.cpp}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROGRAM 3 SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Program 3}
+
+\subsection{Sample Output / Screenshot}
+% \begin{center}
+% \includegraphics[width=0.5\textwidth]{screenshot.png}
+% \end{center}
+
+\subsection{GitHub Commit Messages}
+
+\begin{centering}
+\begin{tabularx}{\linewidth}{c X}
+\thead{Date} & \thead{Message} \\
+\hline
+2019-11-07 & \text{fix crash where maxhistorylines was 0 in hflog} \\
+2019-11-07 & \text{Add pitch() method to TImage} \\
+\hline
+\end{tabularx}
+\end{centering}
+
+\subsection{Source Code}
+% \inputminted{c++}{main.cpp}
+
+
+%\subsection{File.hpp}
+% \inputminted{c++}{File.hpp}
+
+
+%\subsection{File.cpp}
+% \inputminted{c++}{File.cpp}
+
+
+
+\end{document}
