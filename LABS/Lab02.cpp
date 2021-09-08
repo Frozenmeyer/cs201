@@ -11,5 +11,6 @@ int main(){
     std::cout << "Type A number, I'll add one to it and square it" << std::endl;
     int number;
     std::cin >> number;
-    std::cout << "You typed: " << ((number+1)^2) << std::endl;
+    number += 1;
+    std::cout << "You typed: " << number*number << std::endl;
 }
