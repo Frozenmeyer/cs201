@@ -11,5 +11,9 @@
 #include <iostream>
 
 int main(){
-    
+    int n = 1;
+    while (n <= 20){
+        std::cout << n << std::endl;
+        ++n;
+    }
 }
