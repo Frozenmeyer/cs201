@@ -1,4 +1,4 @@
-// Lab 03 
+// Lab 03.2
 // Leif King
 // 9/3/2021
 //
@@ -11,9 +11,15 @@
 #include <iostream>
 
 int main(){
-    int n = 1;
-    while (n <= 20){
-        std::cout << n << std::endl;
+    int j = 0;
+    int n = 0;
+    while (n <= 9){
+        while (j <= 58){
+            std::cout << "*";
+            ++j;
+        }
+        std::cout << "*" << std::endl;
+        j = 0;
         ++n;
     }
 }
